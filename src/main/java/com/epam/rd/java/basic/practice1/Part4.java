@@ -13,7 +13,7 @@ public class Part4 {
                 secondNumber %= firstNumber;
             }
         }
-        System.out.println(secondNumber + firstNumber);
+        System.out.print(secondNumber + firstNumber);
     }
 
 }
