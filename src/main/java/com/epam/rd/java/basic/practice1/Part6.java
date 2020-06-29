@@ -25,11 +25,13 @@ public class Part6 {
                 testChislo++;
             }
         }
-        for (int i = 0; i < (massivProstihChisel.length) - 1; i++) {
-            System.out.print(massivProstihChisel[i] + " ");
+        for (int i = 0; i < massivProstihChisel.length; i++) {
+            if (i == 0) {
+                System.out.print(massivProstihChisel[i]);
+            } else {
+                System.out.print(" " + massivProstihChisel[i]);
+            }
         }
-        int x = (massivProstihChisel.length) - 1;
-        System.out.print(massivProstihChisel[x]);
-    }
 
+    }
 }
