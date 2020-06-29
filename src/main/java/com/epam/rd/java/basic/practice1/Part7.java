@@ -10,14 +10,14 @@ public class Part7 {
         System.out.println(char1 + " ==> " + Part7.str2int(char1));
         System.out.println(char2 + " ==> " + Part7.rightColumn(char2));
         String strelka = " ==> ";
-        System.out.println("A" + strelka + str2int("A") + strelka + int2str(1));
-        System.out.println("B" + strelka + str2int("B") + strelka + int2str(2));
-        System.out.println("Z" + strelka + str2int("Z") + strelka + int2str(26));
-        System.out.println("AA" + strelka + str2int("AA") + strelka + int2str(27));
-        System.out.println("AZ" + strelka + str2int("AZ") + strelka + int2str(52));
-        System.out.println("BA" + strelka + str2int("BA") + strelka + int2str(53));
-        System.out.println("ZZ" + strelka + str2int("ZZ") + strelka + int2str(702));
-        System.out.println("AAA" + strelka + str2int("AAA") + strelka + int2str(703));
+        System.out.print("A" + strelka + str2int("A") + strelka + int2str(1));
+        System.out.print("B" + strelka + str2int("B") + strelka + int2str(2));
+        System.out.print("Z" + strelka + str2int("Z") + strelka + int2str(26));
+        System.out.print("AA" + strelka + str2int("AA") + strelka + int2str(27));
+        System.out.print("AZ" + strelka + str2int("AZ") + strelka + int2str(52));
+        System.out.print("BA" + strelka + str2int("BA") + strelka + int2str(53));
+        System.out.print("ZZ" + strelka + str2int("ZZ") + strelka + int2str(702));
+        System.out.print("AAA" + strelka + str2int("AAA") + strelka + int2str(703));
     }
 
     public static int str2int(String number) {
