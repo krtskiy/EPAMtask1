@@ -3,27 +3,22 @@ package com.epam.rd.java.basic.practice1;
 public class Part7 {
 
     public static void main(String[] args) {
-        int digit1 = Integer.parseInt(args[0]);
-        String char1 = String.valueOf(args[1]);
-        String char2 = String.valueOf(args[2]);
-        System.out.println(digit1 + " ==> " + Part7.int2str(digit1));
-        System.out.println(char1 + " ==> " + Part7.str2int(char1));
-        System.out.println(char2 + " ==> " + Part7.rightColumn(char2));
-        String strelka = " ==> ";
-        System.out.print("A" + strelka + str2int("A") + strelka + int2str(1));
-        System.out.print("B" + strelka + str2int("B") + strelka + int2str(2));
-        System.out.print("Z" + strelka + str2int("Z") + strelka + int2str(26));
-        System.out.print("AA" + strelka + str2int("AA") + strelka + int2str(27));
-        System.out.print("AZ" + strelka + str2int("AZ") + strelka + int2str(52));
-        System.out.print("BA" + strelka + str2int("BA") + strelka + int2str(53));
-        System.out.print("ZZ" + strelka + str2int("ZZ") + strelka + int2str(702));
-        System.out.print("AAA" + strelka + str2int("AAA") + strelka + int2str(703));
+        String arrow = " ==> ";
+        String sb = "A" + arrow + str2int("A") + arrow + int2str(1) + "\n" +
+                "B" + arrow + str2int("B") + arrow + int2str(2) + "\n" +
+                "Z" + arrow + str2int("Z") + arrow + int2str(26) + "\n" +
+                "AA" + arrow + str2int("AA") + arrow + int2str(27) + "\n" +
+                "AZ" + arrow + str2int("AZ") + arrow + int2str(52) + "\n" +
+                "BA" + arrow + str2int("BA") + arrow + int2str(53) + "\n" +
+                "ZZ" + arrow + str2int("ZZ") + arrow + int2str(702) + "\n" +
+                "AAA" + arrow + str2int("AAA") + arrow + int2str(703) + "\n";
+        System.out.print(sb);
     }
 
     public static int str2int(String number) {
         int digit = 0;
-        for(int i = 1, j = number.length(); j > 0; i++,j--){
-            digit += (int)(number.charAt(number.length() - i) -64) * Math.pow(26,number.length() - j);
+        for (int i = 1, j = number.length(); j > 0; i++, j--) {
+            digit += (int) (number.charAt(number.length() - i) - 64) * Math.pow(26, number.length() - j);
         }
         return digit;
     }
