@@ -3,12 +3,12 @@ package com.epam.rd.java.basic.practice1;
 public class Part7 {
 
     public static void main(String[] args) {
-//        int digit1 = Integer.parseInt(args[0]);
-//        String char1 = String.valueOf(args[1]);
-//        String char2 = String.valueOf(args[2]);
-//        System.out.println(digit1 + " ==> " + Part7.int2str(digit1));
-//        System.out.println(char1 + " ==> " + Part7.str2int(char1));
-//        System.out.println(char2 + " ==> " + Part7.rightColumn(char2));
+        int digit1 = Integer.parseInt(args[0]);
+        String char1 = String.valueOf(args[1]);
+        String char2 = String.valueOf(args[2]);
+        System.out.println(digit1 + " ==> " + Part7.int2str(digit1));
+        System.out.println(char1 + " ==> " + Part7.str2int(char1));
+        System.out.println(char2 + " ==> " + Part7.rightColumn(char2));
         String strelka = " ==> ";
         System.out.println("A" + strelka + str2int("A") + strelka + int2str(1));
         System.out.println("B" + strelka + str2int("B") + strelka + int2str(2));
