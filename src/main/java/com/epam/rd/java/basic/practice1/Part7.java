@@ -1,10 +1,11 @@
 package com.epam.rd.java.basic.practice1;
 
 public class Part7 {
+    // I dont understand how it works too
 
     public static void main(String[] args) {
         String arrow = " ==> ";
-        String sb = "A" + arrow + str2int("A") + arrow + int2str(1) + "\n" +
+        String str = "A" + arrow + str2int("A") + arrow + int2str(1) + "\n" +
                 "B" + arrow + str2int("B") + arrow + int2str(2) + "\n" +
                 "Z" + arrow + str2int("Z") + arrow + int2str(26) + "\n" +
                 "AA" + arrow + str2int("AA") + arrow + int2str(27) + "\n" +
@@ -12,7 +13,8 @@ public class Part7 {
                 "BA" + arrow + str2int("BA") + arrow + int2str(53) + "\n" +
                 "ZZ" + arrow + str2int("ZZ") + arrow + int2str(702) + "\n" +
                 "AAA" + arrow + str2int("AAA") + arrow + int2str(703) + "\n";
-        System.out.print(sb);
+//        System.out.print(str);
+        Demo.printTask(str);
     }
 
     public static int str2int(String number) {

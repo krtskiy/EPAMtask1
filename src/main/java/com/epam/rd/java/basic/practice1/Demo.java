@@ -33,4 +33,7 @@ public class Demo {
         Part7.main(new String[]{});
     }
 
+    public static void printTask(String args) {
+        System.out.print(args);
+    }
 }

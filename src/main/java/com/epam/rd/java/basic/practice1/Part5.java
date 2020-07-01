@@ -9,7 +9,10 @@ public class Part5 {
             result += argsInt % 10;
             argsInt /= 10;
         }
-        System.out.print(result);
+//        System.out.print(result);
+//        Just for eMentor
+        String strtask5 = Integer.toString(result);
+        Demo.printTask(strtask5);
     }
 	
 }

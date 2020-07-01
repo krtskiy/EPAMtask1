@@ -13,7 +13,11 @@ public class Part4 {
                 secondNumber %= firstNumber;
             }
         }
-        System.out.print(secondNumber + firstNumber);
+//        System.out.print(secondNumber + firstNumber);
+//        Just for eMentor
+        int gcd = secondNumber + firstNumber;
+        String strTask4 = Integer.toString(gcd);
+        Demo.printTask(strTask4);
     }
 
 }
