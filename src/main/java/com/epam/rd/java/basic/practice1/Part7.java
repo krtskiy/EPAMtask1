@@ -24,23 +24,23 @@ public class Part7 {
     }
 
     public static String int2str(int number) {
-        String chars = "";
-        String charsMirror = "";
+        StringBuilder chars = new StringBuilder();
+        StringBuilder charsMirror = new StringBuilder();
         int modul;
         int divident = number;
         while (divident != 0) {
             modul = divident % 26;
             if (modul == 0) {
-                chars += "Z";
+                chars.append("Z");
                 divident = (divident - 1) / 26;
             } else {
-                chars += (char) (modul + 64);
+                chars.append((char) (modul + 64));
                 divident = (divident - modul) / 26;
             }
         }
         for (int i = 0; i < chars.length(); i++)
-            charsMirror += chars.charAt(chars.length() - i - 1);
-        return charsMirror;
+            charsMirror.append(chars.charAt(chars.length() - i - 1));
+        return charsMirror.toString();
     }
 
     public static String rightColumn(String number) {

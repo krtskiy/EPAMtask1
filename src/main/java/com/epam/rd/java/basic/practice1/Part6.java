@@ -7,7 +7,7 @@ public class Part6 {
         int[] massivProstihChisel = new int[indeks];
         int testChislo = 2;
         int kudaStavimChislo = 0;
-        String strTask6 = "";
+        StringBuilder strTask6 = new StringBuilder();
         boolean isSimple;
         while (kudaStavimChislo < indeks) {
             int i = 0;
@@ -28,11 +28,11 @@ public class Part6 {
         }
         for (int i = 0; i < massivProstihChisel.length; i++) {
             if (i == 0) {
-                strTask6 += (massivProstihChisel[i]);
+                strTask6.append(massivProstihChisel[i]);
             } else {
-                strTask6 += (" " + massivProstihChisel[i]);
+                strTask6.append(" " + massivProstihChisel[i]);
             }
         }
-        Demo.printTask(strTask6);
+        Demo.printTask(strTask6.toString());
     }
 }
