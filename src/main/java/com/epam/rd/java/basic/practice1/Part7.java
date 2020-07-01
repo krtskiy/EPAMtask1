@@ -1,7 +1,6 @@
 package com.epam.rd.java.basic.practice1;
 
 public class Part7 {
-    // I dont understand how it works too
 
     public static void main(String[] args) {
         String arrow = " ==> ";
@@ -13,7 +12,6 @@ public class Part7 {
                 "BA" + arrow + str2int("BA") + arrow + int2str(53) + "\n" +
                 "ZZ" + arrow + str2int("ZZ") + arrow + int2str(702) + "\n" +
                 "AAA" + arrow + str2int("AAA") + arrow + int2str(703) + "\n";
-//        System.out.print(str);
         Demo.printTask(str);
     }
 
