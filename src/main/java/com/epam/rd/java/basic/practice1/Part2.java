@@ -4,8 +4,8 @@ public class Part2 {
 
     public static void main(String[] args) {
         int result = 0;
-        for (int i = 0; i < args.length; i++) {
-            result += Integer.parseInt(args[i]);
+        for (int i = 0; i < args.length; i++) {  //NOSONAR
+            result += Integer.parseInt(args[i]); //NOSONAR
         }
         String strTask2 = Integer.toString(result);
         Demo.printTask(strTask2);

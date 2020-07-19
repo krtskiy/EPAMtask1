@@ -18,7 +18,7 @@ public class Part7 {
     public static int str2int(String number) {
         int digit = 0;
         for (int i = 1, j = number.length(); j > 0; i++, j--) {
-            digit += (int) (number.charAt(number.length() - i) - 64) * Math.pow(26, number.length() - j);
+            digit += (number.charAt(number.length() - i) - 64) * Math.pow(26, number.length() - (double)j);
         }
         return digit;
     }

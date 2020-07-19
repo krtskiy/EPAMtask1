@@ -3,7 +3,7 @@ package com.epam.rd.java.basic.practice1;
 public class Part6 {
 
     public static void main(String[] args) {
-        int indeks = Integer.parseInt(args[0]);
+        int indeks = Integer.parseInt(args[0]); //NOSONAR
         int[] massivProstihChisel = new int[indeks];
         int testChislo = 2;
         int kudaStavimChislo = 0;
@@ -30,7 +30,7 @@ public class Part6 {
             if (i == 0) {
                 strTask6.append(massivProstihChisel[i]);
             } else {
-                strTask6.append(" " + massivProstihChisel[i]);
+                strTask6.append(" ").append(massivProstihChisel[i]);
             }
         }
         Demo.printTask(strTask6.toString());
