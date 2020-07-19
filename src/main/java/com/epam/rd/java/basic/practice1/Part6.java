@@ -2,8 +2,8 @@ package com.epam.rd.java.basic.practice1;
 
 public class Part6 {
 
-    public static void main(String[] args) {
-        int indeks = Integer.parseInt(args[0]); //NOSONAR
+    public static void main(String[] args) { //NOSONAR
+        int indeks = Integer.parseInt(args[0]);
         int[] massivProstihChisel = new int[indeks];
         int testChislo = 2;
         int kudaStavimChislo = 0;
