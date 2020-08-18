@@ -1,9 +1,5 @@
 package com.epam.rd.java.basic.practice1;
 
-public class Part3Test {
-    public static void main(String[] args) {
-        if (false) {
-            Demo.printTask("");
-        }
-    }
+public class Part3Test { //NOSONAR
+
 }
